@@ -3,7 +3,7 @@
 //prueba francisco
 //linea
 //linea 2 steven
-struct Distance{
+																																																																																																																																																																																																																											struct Distance{
     int feet;
     float inch;
 }d1,d2,sum;
