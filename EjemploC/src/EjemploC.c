@@ -1,4 +1,5 @@
 #include <stdio.h>
+// prueba Steven
 struct Distance{
     int feet;
     float inch;
