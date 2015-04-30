@@ -2,6 +2,7 @@
 // prueba Steven
 //prueba francisco
 //linea
+//linea 2 steven
 struct Distance{
     int feet;
     float inch;
