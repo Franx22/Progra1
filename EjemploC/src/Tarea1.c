@@ -4,7 +4,8 @@ struct Distance{
     float inch;
 }d1,d2,sum;
 int main(){
-    printf("Enter information for 1st distance\n");
+	printf("Enter information for 1st distance\n");
+	printf("hola");
     printf("Enter feet: ");
     scanf("%d",&d1.feet);
     printf("Enter inch: ");
