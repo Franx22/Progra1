@@ -5,6 +5,7 @@ struct Distance{
 }d1,d2,sum;
 int main(){
 	printf("Enter information for 1st diste\n");
-	printf("otra prueba");
+	printf("cambio");
+	printf("cambio2");
     return 0;
 }
