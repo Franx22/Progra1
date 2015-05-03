@@ -14,6 +14,11 @@ void *connection_handler(void *);
 
 int main(int argc , char *argv[])
 {
+	int numThreads;
+	printf("hola");
+	printf("Inserte el numero de threads: ");
+	scanf("%d",&numThreads);
+
     int socket_desc , client_sock , c , *new_sock;
     struct sockaddr_in server , client;
 
@@ -61,7 +66,7 @@ int main(int argc , char *argv[])
 
 /****** Aqui se crean los clientes con la cantidad "num" de threads ***********************************************************************************************************/
 
-    while( (client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c)) && num < 5 )
+    while( (client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c)) && num <= numThreads )
     {
     	num = num + 1;
         puts("Coneccion aceptada");

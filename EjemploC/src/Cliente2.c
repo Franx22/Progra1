@@ -8,6 +8,9 @@
 
 int main(int argc , char *argv[])
 {
+	int numThreads;
+	printf("Inserte el numero de threads: ");
+	scanf("%d",&numThreads);
 	int num;
     int sock;
     struct sockaddr_in server;
@@ -16,7 +19,7 @@ int main(int argc , char *argv[])
 /***************************** Crea el socket ***********************************************************************************************************/
 
     sock = socket(AF_INET , SOCK_STREAM , 0);
-    if (sock == -1 || num == 5)
+    if (sock == -1 || num == numThreads)
     {
     	num =  num +1 ;
         printf("No se puede crear el socket");
